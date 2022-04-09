@@ -1,0 +1,35 @@
+﻿<Window x:Class="asssignment2.StudentManagment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:asssignment2"
+        mc:Ignorable="d"
+        Title="Student managment" Height="450" Width="800">
+    <Grid Margin="0,0,0,-6">
+        <GroupBox Header="Info" Margin="0,0,286,234">
+        </GroupBox>
+        <TextBox Name="textBox1" HorizontalAlignment="Left" Margin="297,56,0,333" TextWrapping="Wrap" Width="112" RenderTransformOrigin="0.515,0.591"/>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="145,22,0,0" VerticalAlignment="Top"/>
+        <Label Content="Grade" HorizontalAlignment="Left" Margin="150,159,0,0" VerticalAlignment="Top"/>
+        <Label Content="Course" HorizontalAlignment="Left" Margin="150,118,0,0" VerticalAlignment="Top"/>
+        <Label Content="Name and family " HorizontalAlignment="Left" Margin="145,64,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="comboBox1" HorizontalAlignment="Left" Margin="297,22,0,0" VerticalAlignment="Top" Width="112" Height="26" SelectionChanged="comboBox1_SelectionChanged"/>
+        <ComboBox Name="comboBox2" HorizontalAlignment="Left" Margin="297,116,0,0" VerticalAlignment="Top" Width="112" Height="25" SelectionChanged="comboBox2_SelectionChanged"/>
+        <TextBox Name ="textBox2"  HorizontalAlignment="Left" Margin="297,149,0,246" TextWrapping="Wrap" Width="112" RenderTransformOrigin="0.515,0.591" TextChanged="textBox2_TextChanged"/>
+
+
+        <GroupBox Margin="585,8,65,246">
+        </GroupBox>
+        <Button Content="New" HorizontalAlignment="Left" Margin="613,8,0,0" VerticalAlignment="Top" Height="29" Width="102" Click="Button_Click_1"/>
+        <Button Content="Add Grade" HorizontalAlignment="Left" Margin="613,42,0,0" VerticalAlignment="Top" Height="29" Width="102" Click="Button_Click"/>
+        <Button Content="Modify Grade" HorizontalAlignment="Left" Margin="613,78,0,0" VerticalAlignment="Top" Height="29" Width="102" Click="Button_Click_2"/>
+        <Button Content="Preview" HorizontalAlignment="Left" Margin="613,112,0,0" VerticalAlignment="Top" Height="29" Width="102" Click="Button_Click_3"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="613,149,0,0" VerticalAlignment="Top" Height="29" Width="102" Click ="Exit"/>
+
+        <DataGrid Name="List" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="28,220,33,32"/>
+
+
+
+    </Grid>
+</Window>

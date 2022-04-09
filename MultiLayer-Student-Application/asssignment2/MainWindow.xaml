@@ -1,0 +1,20 @@
+﻿<Window x:Class="asssignment2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:asssignment2"
+        mc:Ignorable="d"
+        Title="Main menu" Height="450" Width="800">
+    <Grid>
+        <Menu>
+            <MenuItem Header="Management" Click="MenuItem_Click_1">
+                <MenuItem Header="Students Management" Click ="StudentClick" />
+                <MenuItem Header="Grades Management" Click ="GradeClick"/>
+            </MenuItem>
+            <MenuItem Header="Consultation" Click ="Consultation" />
+            <MenuItem Header="Exit" Click ="Exit"/>
+        </Menu>
+
+    </Grid>
+</Window>
